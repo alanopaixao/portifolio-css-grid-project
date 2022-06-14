@@ -197,6 +197,7 @@ p {
 .bg-grey {
   background: var(--clr-grey-10);
 }
+
 /*
 =============== 
 Navbar
@@ -242,13 +243,16 @@ Navbar
     width: 95vw;
   }
 }
+
 @media screen and (min-width: 768px) {
   .nav {
     background-color: var(--clr-primary-10);
   }
+
   .nav-btn {
     display: none;
   }
+
   .nav-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -256,6 +260,7 @@ Navbar
     column-gap: 2rem;
     justify-self: flex-end;
   }
+
   .nav-links a {
     text-transform: capitalize;
     color: var(--clr-grey-1);
@@ -263,9 +268,11 @@ Navbar
     letter-spacing: var(--spacing);
     transition: var(--transition);
   }
+
   .nav-links a:hover {
     color: var(--clr-primary-5);
   }
+
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -307,6 +314,7 @@ Sidebar
   /* add later */
   transform: translateX(-100%);
 }
+
 .show-sidebar {
   transform: translateX(0);
 }
@@ -314,6 +322,7 @@ Sidebar
 .sidebar-links {
   text-align: center;
 }
+
 .sidebar-links a {
   font-size: 2rem;
   text-transform: capitalize;
@@ -335,14 +344,17 @@ Sidebar
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
+
 .social-icon {
   font-size: 1.5rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
+
 .social-icon:hover {
   color: var(--clr-primary-5);
 }
+
 .close-btn {
   position: absolute;
   top: 1rem;
@@ -369,12 +381,15 @@ Hero
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
+
 .hero-img {
   display: none;
 }
+
 .hero {
   background: var(--clr-primary-10);
 }
+
 .hero-center {
   min-height: calc((100vh - 5rem));
   display: grid;
@@ -398,9 +413,11 @@ Hero
     display: block;
     position: relative;
   }
+
   .hero-center {
     grid-template-columns: 1fr 1fr;
   }
+
   .hero-photo {
     max-width: 25rem;
     max-height: 30rem;
@@ -408,6 +425,7 @@ Hero
     border-radius: var(--radius);
     position: relative;
   }
+
   .hero-img::before,
   .about-img::before {
     content: "";
@@ -420,6 +438,7 @@ Hero
     border-radius: var(--radius);
   }
 }
+
 .hero-photo {
   max-width: 25rem;
   max-height: 30rem;
@@ -450,6 +469,7 @@ About
   display: grid;
   gap: 3rem 2rem;
 }
+
 .about-img {
   justify-self: center;
 }
@@ -458,6 +478,7 @@ About
   .about-title {
     text-align: left;
   }
+
   .about-title .underline {
     margin: 0;
   }
@@ -465,17 +486,21 @@ About
   .about-center {
     grid-template-columns: 1fr 1fr;
   }
+
   .about-img {
     position: relative;
   }
+
   .about-img::before {
     right: 2rem;
   }
+
   .about-info {
     align-self: center;
     text-align: left;
   }
 }
+
 /*
 =============== 
 Services
@@ -527,6 +552,7 @@ Services
     gap: 0 2rem;
   }
 }
+
 /*
 =============== 
 Projects
@@ -544,6 +570,7 @@ Projects
   border-radius: var(--radius);
   margin-bottom: 2rem;
 }
+
 .project-info {
   text-align: center;
   color: var(--clr-white);
@@ -554,6 +581,7 @@ Projects
   transition: var(--transition);
   opacity: 0;
 }
+
 .project-info p {
   text-transform: capitalize;
   color: var(--clr-white);
@@ -599,11 +627,13 @@ Projects
     column-gap: 2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .projects-center {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media screen and (min-width: 1170px) {
   .projects-center {
     grid-template-rows: 200px 200px;
@@ -612,6 +642,7 @@ Projects
       "a b b"
       "a c d";
   }
+
   .project-img,
   .project {
     height: 100%;
@@ -620,16 +651,20 @@ Projects
   .project-1 {
     grid-area: a;
   }
+
   .project-2 {
     grid-area: b;
   }
+
   .project-3 {
     grid-area: c;
   }
+
   .project-4 {
     grid-area: d;
   }
 }
+
 /*
 =============== 
 Connect
@@ -641,6 +676,7 @@ Connect
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
 }
+
 .connect {
   clip-path: polygon(
     50% 0,
@@ -675,16 +711,20 @@ Connect
   opacity: 0.7;
   z-index: -1;
 }
+
 .connect {
   display: grid;
   place-items: center;
 }
+
 .video-banner .section-title {
   margin-bottom: 2rem;
 }
+
 .video-text {
   max-width: 30rem;
 }
+
 .video-banner {
   background: var(--clr-primary-10);
   padding: 3rem 5rem 12rem 5rem;
@@ -700,6 +740,7 @@ Connect
     0% 75%
   );
 }
+
 /*
 =============== 
 Skills
@@ -712,13 +753,16 @@ Skills
     column-gap: 2rem;
   }
 }
+
 .skills {
   background: var(--clr-primary-9);
 }
+
 .skills h3 {
   margin: 1.5rem 0;
   color: var(--clr-primary-1);
 }
+
 .skill {
   margin-bottom: 1.25rem;
 }
@@ -750,6 +794,7 @@ Skills
 .value-70 {
   width: 70%;
 }
+
 .value-80 {
   width: 80%;
 }
@@ -764,9 +809,11 @@ Skills
 .skill-text-value-70 {
   left: 70%;
 }
+
 .skill-text-value-80 {
   left: 80%;
 }
+
 /*
 =============== 
 Timeline
@@ -827,6 +874,7 @@ Timeline
   color: var(--clr-primary-1);
   font-weight: bold;
 }
+
 .timeline-item:nth-child(even) .number {
   left: 0;
 }
@@ -835,6 +883,7 @@ Timeline
   right: 0;
   transform: translate(50%, -50%);
 }
+
 /*
 =============== 
 Blog
@@ -850,6 +899,7 @@ Blog
   /* talk later */
   perspective: 1500px;
 }
+
 .card-side {
   transition: all 2s linear;
   backface-visibility: hidden;
@@ -860,9 +910,11 @@ Blog
   height: 100%;
   border-radius: var(--radius);
 }
+
 .card-front {
   background: var(--clr-white);
 }
+
 .card-back {
   background: var(--clr-primary-10);
   transform: rotateY(180deg);
@@ -877,9 +929,11 @@ Blog
 .card:hover .card-back {
   transform: rotateY(0deg);
 }
+
 .card-info {
   padding: 1rem 1.5rem;
 }
+
 .card-front img {
   height: 13rem;
   object-fit: cover;
@@ -899,6 +953,7 @@ Blog
   object-fit: cover;
   border-radius: 50%;
 }
+
 .card-footer p {
   margin-bottom: 0;
   text-transform: uppercase;
@@ -912,6 +967,7 @@ Blog
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
 }
+
 /*
 =============== 
 Footer
@@ -923,6 +979,7 @@ Footer
   display: grid;
   place-items: center;
 }
+
 .footer .social-icons {
   margin-bottom: 2rem;
 }
@@ -946,9 +1003,11 @@ Single Page
   background: var(--clr-primary-10);
   min-height: calc(100vh - 5rem - 198px);
 }
+
 .page-info {
   max-width: 700px;
 }
+
 .page-info a {
   text-transform: uppercase;
   color: var(--clr-primary-5);
